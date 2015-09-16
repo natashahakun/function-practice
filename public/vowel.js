@@ -8,8 +8,14 @@
 */
 
 function isVowel(letter) {
-
-}
+  var vowel = "";
+  vowel = letter.toLowerCase();
+  if (vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u") {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /*
   This function should accept a string as a parameter.
@@ -20,5 +26,11 @@ function isVowel(letter) {
 */
 
 function countVowels(word) {
-
+  var total = 0;
+  for (i = 0; i < word.length; i++) {
+    if (isVowel(word[i]) === true) {
+      total++;
+    }
+  }
+  return total;
 }

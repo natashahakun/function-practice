@@ -4,7 +4,7 @@
 */
 
 function max(a, b) {
-
+  return Math.max(a, b);
 }
 
 /*
@@ -14,6 +14,6 @@ function max(a, b) {
 */
 
 function maxOfThree(a, b, c) {
-
+  return Math.max(a, b, c);
 }
 
